@@ -1,0 +1,20 @@
+﻿<Window x:Class="BitwardenPrinter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BitwardenPrinter"
+        mc:Ignorable="d"
+        Title="Bitwarden Printer" Height="240" Width="330" Closed="Window_Closed" MinWidth="328" MinHeight="220">
+    <StackPanel x:Name="buttonFile">
+        <Label Content="Bitwarden Printer" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="28" FontWeight="Bold"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" Orientation="Horizontal">
+            <Label Content="Username:" Margin="0,0,0,0" VerticalAlignment="Center"/>
+            <TextBox x:Name="textAccount" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" MinWidth="100" />
+        </StackPanel>
+        <Button Content="Convert!" HorizontalAlignment="Center" VerticalAlignment="Center" Click="buttonFile_Click" Height="23" Width="57" Margin="0,5,0,0"/>
+        <TextBlock x:Name="labelFile" Margin="20,10,20,20" TextWrapping="WrapWithOverflow" VerticalAlignment="Stretch" Text="Please load csv file"/>
+        <!--<TextBlock x:Name="textPreview" HorizontalAlignment="Left" Margin="43,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="105"/>-->
+
+    </StackPanel>
+</Window>
